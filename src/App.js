@@ -19,12 +19,11 @@ function App() {
       </div>
       <div id="Projects">
         <Projects />
+        {/* still need to change this item */}
       </div>
       <div id="Contact">
         <Contact />
-      </div>
-
-      
+      </div>      
     </div>
   );
 }
