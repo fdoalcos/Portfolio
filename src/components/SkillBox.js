@@ -37,7 +37,7 @@ function SkillBox({skillImage, skillName}) {
                     <div className='skillImage'>
                         <img className={item.className} src={item.src}/>
                     </div>
-                    <div className='skillName'>
+                    <div className='skillNames'>
                         <p>{item.language}</p>
                     </div>
                 </div>
