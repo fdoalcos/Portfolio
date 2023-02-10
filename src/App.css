@@ -256,3 +256,43 @@
   width: 99px;
   height: 86px
 }
+
+/* Projects */
+
+.projectName {
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 27.5px;
+  text-transform: uppercase;
+}
+
+.projectInfo {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 51px;
+}
+
+.projectDate {
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 27.5px;
+  text-transform: uppercase;
+}
+
+.projectTitle {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.projectInfo {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  width: 524px;
+  height: 110px;
+  line-height: 27.5px;
+  margin: 20px 0;
+}

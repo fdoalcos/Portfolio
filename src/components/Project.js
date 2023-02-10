@@ -6,8 +6,8 @@ function Project({date, title, skills, description, link, image}) {
             <div className='projectContainer'>
                 <div className='projectColumns'>
                     <div className='projectMain'>
-                        <h3>{date}</h3>
-                        <h1>{title}</h1>
+                        <h3 className='projectDate'>{date}</h3>
+                        <h1 className='projectTitle'>{title}</h1>
                         {
                             skills.map(skill => (
                                 <>
@@ -17,7 +17,7 @@ function Project({date, title, skills, description, link, image}) {
                                 </>
                             ))
                         }
-                        <p>{description}</p>
+                        <p className='projectInfo'>{description}</p>
                         <div class="projectButton">
                             <a href={link}>See Project</a>
                         </div>
