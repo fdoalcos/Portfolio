@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 function Project({date, title, skills, description, link, image}) {
     return (
@@ -12,19 +13,20 @@ function Project({date, title, skills, description, link, image}) {
                             skills.map(skill => (
                                 <>
                                     <div className='skillBox'>
-                                        <h5>{skill}</h5>
+                                        {/* <h5 className='skillBoxName'>{skill}</h5> */}
+                                        <button className='skillBoxName'>{skill}</button>
                                     </div>
                                 </>
                             ))
                         }
                         <p className='projectInfo'>{description}</p>
                         <div class="projectButton">
-                            <a href={link}>See Project</a>
+                            {/* <a href={link}>See Project</a> */}
+                            <Button name={"See Project"} link={link} />
                         </div>
                     </div>
                     <div className='projectImage'>
                         <img src={image} alt="projectImage" />
-                        <img src={require('/images/NetworkingWebApp.svg').default} alt='mySvgImage' />
                     </div>
                 </div>
                 

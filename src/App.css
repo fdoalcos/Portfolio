@@ -177,6 +177,23 @@
   line-height: 27.5px;
 }
 
+.skillBox {
+  margin: 20px 0;
+}
+
+
+.skillBoxName {
+  font-family: Outfit;
+  color: black;
+  padding: 5px 17px;
+  background-color: #F9EFE7;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
 .skillInfo {
   font-family: Outfit;
   font-weight: 600;

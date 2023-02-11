@@ -2,6 +2,9 @@ import React from 'react';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
 import Project from './Project';
+import NetWorkingWebAppSVG from '../images/NetworkingWebApp.svg'
+import MailServiceWebAppSVG from '../images/MailServiceWebApp.svg'
+import OnlineAuctionWebAppSVG from '../images/OnlineAuctionWebApp.svg'
 
 function Projects(props) {
     const NetWorkingWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
@@ -22,7 +25,7 @@ function Projects(props) {
                         skills={NetWorkingWebApp} 
                         description={"Developed a networking website that acts like Twitter and lets users Post, Follow, Comment, and Like users. This website is perfect for interacting with other users as its main functionality is interacting with people like any other Social Media App."} 
                         link={"#"} 
-                        image={"images/NetworkingWebApp.svg"} 
+                        image={NetWorkingWebAppSVG} 
                     />
                 </div>
                 <div className='projectProject'>
@@ -31,7 +34,7 @@ function Projects(props) {
                         skills={MailServiceWebApp} 
                         description={"Developed a mailing website that acts like Gmail and lets users Send, Receive, and Reply to users. This website is good for messaging other users and its Backend was improvised to make the interaction between users much faster."} 
                         link={"#"} 
-                        image={"images/MailServiceWebApp.png"} 
+                        image={MailServiceWebAppSVG} 
                     />
                 </div>
                 <div className='projectProject'>
@@ -40,7 +43,7 @@ function Projects(props) {
                         skills={OnlineAuctionWebApp} 
                         description={"Developed an Online Auction website that acts like Ebay and  lets users Create, Review, Bid, Buy and Sell a product online. This website is good for buying or selling an Item online as its implementation has all your needs just like an Online Store."} 
                         link={"#"} 
-                        image={"images/OnlineAuctionWebApp.png"} 
+                        image={OnlineAuctionWebAppSVG} 
                     />
                 </div>
             </div>
