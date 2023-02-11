@@ -24,6 +24,7 @@ function Project({date, title, skills, description, link, image}) {
                     </div>
                     <div className='projectImage'>
                         <img src={image} alt="projectImage" />
+                        <img src={require('/images/NetworkingWebApp.svg').default} alt='mySvgImage' />
                     </div>
                 </div>
                 
