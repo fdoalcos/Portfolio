@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Button({name, link}) {
+function Button({name, className, link}) {
     return (
         <div>
-            <button className='portfolioButton'><a className='portfolioLink' href={link}>{name}</a></button>
+            <button className={className ? className : 'portfolioButton'}><a className='portfolioLink' href={link}>{name}</a></button>
         </div>
     );
 }

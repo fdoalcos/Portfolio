@@ -17,7 +17,7 @@ function Projects(props) {
             <div className='projectContainer'>
                 <div>
                     <h2 className='projectName'>Personal Projects</h2>
-                    <h1 className='projectInfo'>I enjoy developing and contrubutin mys skills to the team</h1>
+                    <h1 className='projectSubName'>I enjoy developing and contrubutin mys skills to the team</h1>
                 </div>
                 <div className='projectProject'>
                     <Project date={"SEP 2022 - DEC 2022"} 
