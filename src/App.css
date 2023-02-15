@@ -159,6 +159,8 @@
   margin-bottom: 0; 
 }
 
+/* media queries for home */
+
 @media (max-width: 1078px) {
   .homeName {
     font-family: Outfit;
