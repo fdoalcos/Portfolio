@@ -14,7 +14,7 @@ function AboutMe(props) {
                     <div className="aboutContainer">
                         <div className="aboutColumns">
                             <div className="aboutImages">
-                                <img className="aboutImage"src='/images/AestheticBrain.png'/>
+                                <img className="aboutImage" src='/images/AestheticBrain.png'/>
                             </div>
                             <div className="aboutMainName">
                                 <h1 className="aboutName">About Me</h1>

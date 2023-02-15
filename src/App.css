@@ -65,6 +65,15 @@
 
 /* Home section */
 
+.navContainer {
+  display: flex;
+}
+
+.homeUl {
+  display: flex;
+}
+
+
 .portfolioButton {
   background-color: #7721D6;
   border: none;
@@ -103,23 +112,41 @@
   text-decoration: none;
 }
 
+.homeMainContainer {
+  position: relative;
+}
+
+.homeColumns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .homeImage {
-  width: 423px;
+  max-width: 423px;
   height: 447px;
+}
+
+.homeMainName {
+  align-self: center;
+  text-align: left;
 }
 
 .homeName {
   font-family: Outfit;
   font-size: 128px;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 128px;
-  margin: 0;
+  margin: -5px;
 }
 
 .homeSubName {
   font-family: Outfit;
   font-weight: 700;
   font-size: 53px;
+  max-width: 60em;
   margin: 0;
 }
 
@@ -127,17 +154,84 @@
   font-family: Roboto;
   font-weight: 400;
   font-size: 20px;
-  width: 632px;
-  height: 483px;
+  max-width: 632px;
   line-height: 27.5px;
+  margin-bottom: 0; 
+}
+
+@media (max-width: 1078px) {
+  .homeName {
+    font-family: Outfit;
+    font-size: 128px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 128px;
+    margin: -5px;
+    text-align: center;
+  }
+
+  .homeInfo {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 632px;
+    line-height: 27.5px;
+    margin-bottom: 0; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .homeName {
+    font-family: Outfit;
+    font-size: 95px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 128px;
+    margin: -5px;
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .homeSubName {
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 35px;
+    max-width: 60em;
+    margin: 0;
+    text-align: center;
+  }
+
+  .homeInfo {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 632px;
+    line-height: 27.5px;
+    margin-bottom: 0; 
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 
 
 /* About section */
 
-.aboutIMage {
+.aboutColumns {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.aboutImages {
+  align-self: center;
+}
+
+.aboutImage {
   width: 462px;
-  height: 390px;
+  /* margin-left: 20px; */
+  /* height: 390px; */
 }
 
 .aboutName {
@@ -154,6 +248,7 @@
   font-weight: 600;
   font-size: 51px;
   line-height: 51px;
+  margin-bottom: 50px;
 }
 
 .aboutInfo {
@@ -163,7 +258,7 @@
   width: 524px;
   height: 110px;
   line-height: 27.5px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 
 
@@ -391,3 +486,7 @@
   margin: 20px 0;
 }
 
+
+:root {
+  --primary-color: #456;
+}

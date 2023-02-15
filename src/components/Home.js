@@ -8,9 +8,9 @@ function Home(props) {
         <div>
             <div className="navMain">
                 <div className="navContainer">
-                    <a className='homeLinkHead' href="#">LOGO</a>
                     <nav class="navNavigation">
                     <ul className='homeUl'>
+                        <li><a className='homeLinkHead' href="#">LOGO</a></li>
                         <li><a className='homeLink' href="#">Home</a></li>
                         <li><a className='homeLink' href="#">About Me</a></li>
                         <li><a className='homeLink' href="#">Skills</a></li>
@@ -24,7 +24,7 @@ function Home(props) {
             </div>
             <GradientPurple />
             <GradientBlue />
-            <div>
+            <div className='homeMainContainer'>
                 <section>
                     <div className="homeContainer">
                         <div className="homeColumns">
