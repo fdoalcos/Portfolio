@@ -244,23 +244,47 @@
 }
 
 .aboutSubName {
-  width: 525px;
+  max-width: 525px;
   height: 123px;
   font-family: Outfit;
   font-weight: 600;
   font-size: 51px;
   line-height: 51px;
   margin-bottom: 50px;
+  /* font-size: clamp(18px, 8vw, 55px); */
+
 }
 
 .aboutInfo {
   font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
-  width: 524px;
+  max-width: 524px;
   height: 110px;
   line-height: 27.5px;
   margin: 0 0 20px 0;
+}
+
+/* media */
+
+@media (max-width: 560px) {
+  .aboutMainName {
+    margin-left: 11px;
+  }
+
+  .aboutName {
+    font-size: 19px;
+  }
+
+  .aboutSubName {
+    font-size: 41px;
+    margin-bottom: 40px;
+  }
+
+  .aboutInfo {
+    font-size: 17px;
+    margin: 0 0 41px 0;
+  }
 }
 
 
