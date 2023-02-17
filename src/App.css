@@ -2,8 +2,20 @@
   background-color: #1C2329;
 }
 
-.App {
+.MainContainer {
   color: white;
+  padding: 0 20px;
+}
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+@media (max-width: 500px) {
+  body {
+    /* margin-right: -37px; */
+    /* background-color: white; */
+  }
 }
 
 .App-logo {
@@ -17,16 +29,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -63,10 +66,24 @@
 
 }
 
+#Skills {
+  display: none;
+}
+
+#Projects {
+  display: none;
+}
+
+#Contact {
+  display: none;
+}
+
 /* Home section */
 
 .navContainer {
-  display: flex;
+  display: none;
+  /* display: flex; */
+  flex-wrap: wrap;
 }
 
 .homeUl {
@@ -135,20 +152,20 @@
 
 .homeName {
   font-family: Outfit;
-  font-size: 128px;
+  /* font-size: 128px; */
   font-weight: 700;
   text-transform: uppercase;
   line-height: 128px;
   margin: -5px;
-}
+  font-size: clamp(4.875rem, 3.5357rem + 5.9524vw, 8rem);}
 
 .homeSubName {
   font-family: Outfit;
   font-weight: 700;
-  font-size: 53px;
+  /* font-size: 53px; */
   max-width: 60em;
   margin: 0;
-}
+  font-size: clamp(1.5625rem, 0.8125rem + 3.3333vw, 3.3125rem);}
 
 .homeInfo {
   font-family: Roboto;
@@ -161,36 +178,38 @@
 
 /* media queries for home */
 
-@media (max-width: 1078px) {
+@media (max-width: 1110px) {
   .homeName {
     font-family: Outfit;
-    font-size: 128px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 128px;
-    margin: -5px;
+    /* font-size: 128px; */
     text-align: center;
   }
 
   .homeInfo {
     font-family: Roboto;
     font-weight: 400;
-    font-size: 20px;
+    /* font-size: 20px; */
     max-width: 632px;
     line-height: 27.5px;
     margin-bottom: 0; 
     text-align: center;
   }
+
+  .homeSubName {
+    font-family: Outfit;
+    font-weight: 700;
+    /* font-size: 35px; */
+    max-width: 60em;
+    margin: 0;
+    text-align: center;
+  }
+  
 }
 
-@media (max-width: 660px) {
+@media (max-width: 700px) {
   .homeName {
     font-family: Outfit;
-    font-size: 95px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 128px;
-    margin: -5px;
+    /* font-size: 95px; */
     text-align: center;
     margin-bottom: -20px;
   }
@@ -198,7 +217,7 @@
   .homeSubName {
     font-family: Outfit;
     font-weight: 700;
-    font-size: 35px;
+    /* font-size: 35px; */
     max-width: 60em;
     margin: 0;
     text-align: center;
@@ -269,7 +288,7 @@
 
 @media (max-width: 560px) {
   .aboutMainName {
-    margin-left: 11px;
+    /* margin-left: 11px; */
   }
 
   .aboutName {
@@ -516,3 +535,23 @@
 :root {
   --primary-color: #456;
 }
+
+/* @media (max-width: 480px)  {
+  :root {
+    padding: 0px 25px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    padding: 0px 50px;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  :root {
+    padding: 0px 100px;
+  }
+} */
