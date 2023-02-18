@@ -4,7 +4,7 @@
 
 .MainContainer {
   color: white;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 body::-webkit-scrollbar { 
@@ -258,14 +258,13 @@ body::-webkit-scrollbar {
 
 .aboutSubName {
   max-width: 525px;
-  height: 123px;
   font-family: Outfit;
   font-weight: 600;
-  font-size: 51px;
+  /* font-size: 51px; */
   line-height: 51px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   /* font-size: clamp(18px, 8vw, 55px); */
-
+  font-size: clamp(2.1875rem, 1.8875rem + 1.6vw, 3.1875rem);
 }
 
 .aboutInfo {
@@ -273,9 +272,8 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-size: 18px;
   max-width: 524px;
-  height: 110px;
   line-height: 27.5px;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 /* media */
@@ -290,13 +288,13 @@ body::-webkit-scrollbar {
   }
 
   .aboutSubName {
-    font-size: 41px;
-    margin-bottom: 40px;
+    /* font-size: 41px; */
+    /* margin-bottom: 40px; */
   }
 
   .aboutInfo {
-    font-size: 17px;
-    margin: 0 0 41px 0;
+    /* font-size: 17px; */
+    /* margin: 0 0 41px 0; */
   }
 }
 
