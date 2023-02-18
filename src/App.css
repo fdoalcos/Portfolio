@@ -11,12 +11,6 @@ body::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
-@media (max-width: 500px) {
-  body {
-    /* margin-right: -37px; */
-    /* background-color: white; */
-  }
-}
 
 .App-logo {
   height: 40vmin;
