@@ -11,9 +11,11 @@ function Skills(props) {
             <div>
                 <section>
                     <div className='skillContainer'>
-                        <div className='skillHeader'>
-                            <h1 className='skillName'>SKILLS</h1>
-                            <h1 className='skillInfo'>What I can bring to the team and the skillset I have</h1>
+                        <div>
+                            <div className='skillHeader'>
+                                <h1 className='skillName'>SKILLS</h1>
+                                <h1 className='skillInfo'>What I can bring to the team and the skillset I have</h1>
+                            </div>
                         </div>
                         <div className='skillBox'>
                             <SkillBox skillImage="#" skillName="Python" />
