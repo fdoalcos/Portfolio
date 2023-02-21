@@ -244,7 +244,9 @@ body::-webkit-scrollbar {
 }
 
 .aboutImage {
-  width: 462px;
+  width: 100%;
+  max-width: 462px;
+  height: auto;
   /* margin-left: 20px; */
   /* height: 390px; */
 }
