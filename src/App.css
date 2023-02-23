@@ -254,7 +254,7 @@ body::-webkit-scrollbar {
 .aboutName {
   font-family: Outfit;
   font-weight: 500;
-  font-size: 21px;
+  font-size: var(--sub-header-font);
   text-transform: uppercase;
 }
 
@@ -266,7 +266,7 @@ body::-webkit-scrollbar {
   line-height: 51px;
   margin-bottom: 15px;
   /* font-size: clamp(18px, 8vw, 55px); */
-  font-size: clamp(2.1875rem, 1.8875rem + 1.6vw, 3.1875rem);
+  font-size: var(--header-font);
 }
 
 .aboutInfo {
@@ -304,20 +304,40 @@ body::-webkit-scrollbar {
 
 /* Skills section */
 
+.skillHeader {
+  margin-right: 448px;
+  margin-bottom: 20px;
+  /* position: relative; */
+  /* top: -200px; */
+  /* right: 190px; */
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 .skillName {
   font-family: Outfit;
   font-weight: 500;
-  font-size: 21px;
+  font-size: var(--sub-header-font);
   line-height: 27.5px;
 }
 
 .skillBox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+  /* position: absolute; */
+  display: grid;
+  gap: 20px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 203px); */
+  /* justify-content: center; */
+  grid-auto-flow: column;
+}
+
+.SkillBox:nth-child(5n + 1) {
+  grid-column: 1;
 }
 
 
@@ -336,7 +356,8 @@ body::-webkit-scrollbar {
 .skillInfo {
   font-family: Outfit;
   font-weight: 600;
-  font-size: 51px;
+  font-size: var(--header-font);
+  max-width: 650px;
 }
 
 
@@ -347,7 +368,7 @@ body::-webkit-scrollbar {
   background-color: #19191B;
   border-radius: 10px;
   /* margin: 20px 0; */
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
 }
 
 .skillImage {
@@ -371,6 +392,45 @@ body::-webkit-scrollbar {
   top: 70%;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+
+@media (max-width: 1107px) {
+  .skillContainer {
+    align-items: normal;
+  }
+  
+  .skillHeader {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1004px) {
+  .skillBox {
+    grid-auto-flow: row;
+  }
+
+  .SkillBox {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 191px;
+    background-color: #19191B;
+    border-radius: 10px;
+  }
+  
+  .skillImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  
+  .skillNames {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
 }
 
 .imagePython {
@@ -536,22 +596,7 @@ body::-webkit-scrollbar {
   --primary-color: #456;
 }
 
-/* @media (max-width: 480px)  {
-  :root {
-    padding: 0px 25px;
-  }
+:root {
+  --sub-header-font: 21px;
+  --header-font: clamp(2.1875rem, 1.8875rem + 1.6vw, 3.1875rem);
 }
-
-
-@media (max-width: 768px) {
-  :root {
-    padding: 0px 50px;
-  }
-}
-
-
-@media (max-width: 1080px) {
-  :root {
-    padding: 0px 100px;
-  }
-} */

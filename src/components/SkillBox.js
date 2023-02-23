@@ -32,7 +32,7 @@ function SkillBox({skillImage, skillName}) {
          */}
 
         {
-            item.map(item => (                
+            item.map(item => (     
                 <div className='SkillBox'>
                     <div className='skillImage'>
                         <img className={item.className} src={item.src}/>
