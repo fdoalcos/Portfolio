@@ -394,61 +394,14 @@ body::-webkit-scrollbar {
   transform: translate(-50%, 50%);
 }
 
-@media (max-width: 1107px) {
-  .skillContainer {
-    align-items: normal;
-  }
-  
-  .skillHeader {
-    margin-right: 0;
-  }
-}
 
-@media (max-width: 1120px) {
-  .skillBox {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1004px) {
-  .skillBox {
-    grid-auto-flow: row;
-  }
-
-  .SkillBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    width: 100%;
-    height: 191px;
-    background-color: #19191B;
-    border-radius: 10px;
-  }
-  
-  .skillImage {
-    position: inherit;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-  
-  .skillNames {
-    position: inherit;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
 
 .imagePython {
   width: 94px;
   height: 93px  
 }
 .imageJavaScript {
-  width: 190px;
+  width: 107px;
   height: 107px  
 }
 .imageJava {
@@ -464,7 +417,7 @@ body::-webkit-scrollbar {
   height: 107px  
 }
 .imageHTML {
-  width: 176px;
+  width: 95px;
   height: 95px  
 }
 .imageCSS {
@@ -482,6 +435,118 @@ body::-webkit-scrollbar {
 .imageReact {
   width: 99px;
   height: 86px
+}
+
+@media (max-width: 1107px) {
+  .skillContainer {
+    align-items: normal;
+  }
+  
+  .skillHeader {
+    margin-right: 0;
+  }
+  
+}
+
+@media (max-width: 1120px) {
+  .skillContainer {
+    margin-left: 55px;
+  }
+
+  .skillBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1004px) {
+  
+  .skillContainer {
+    margin-left: 0;
+  }
+
+  .skillBox {
+    grid-auto-flow: row;
+  }
+
+  .SkillBox {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #19191B;
+    border-radius: 10px;
+  }
+  
+  .skillImage {
+    position: inherit;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  
+  .skillNames {
+    position: inherit;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .imageFlask {
+    width: 75px;
+    height: 100px
+  }
+
+  
+}
+
+@media (max-width: 702px) {
+  .imagePython {
+    width: 80px;
+    height: 80px;
+  }
+  .imageJavaScript {
+    width: 80px;
+    height: 80px  
+  }
+  .imageJava {
+    margin-left: -15px;
+    width: 70px;
+    height: 85px  
+  }
+  .imageC {
+    width: 70px;
+    height: 80px;
+    margin-left: 20px;  
+  }
+  .imageSQL {
+    width: 85px;
+    height: 85px  
+  }
+  .imageHTML {
+    width: 85px;
+    height: 85px  
+  }
+  .imageCSS {
+    width: 75px;
+    height: 85px  
+  }
+  .imageDjango {
+    width: 65px;
+    height: 85px
+  }
+  .imageFlask {
+    width: 100px;
+    height: 85px
+  }
+  .imageReact {
+    width: 99px;
+    height: 86px
+  }
 }
 
 /* Projects */
