@@ -60,12 +60,22 @@ body::-webkit-scrollbar {
 
 }
 
+#Home {
+  /*  */
+}
+
+#AboutMe {
+  position: relative;
+}
+
 #Skills {
   /* display: none; */
+  position: relative;
 }
 
 #Projects {
-  display: none;
+  /* display: none; */
+  position: relative;
 }
 
 #Contact {
@@ -551,6 +561,21 @@ body::-webkit-scrollbar {
 
 /* Projects */
 
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectColumns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin: 0 0 50px 0;
+}
+
 .projectName {
   font-family: Outfit;
   font-weight: 500;
@@ -559,10 +584,33 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
 }
 
+.skillBoxContainer {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillsBox:nth-child(4n + 1) {
+  grid-column: 1;
+}
+
+
+
+.projectProject {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+
 .projectSubName {
   font-family: Outfit;
   font-weight: 600;
-  font-size: 51px;
+  font-size: var(--header-font);
+  max-width: 789px;
+  margin-right: 311px;
+  margin-bottom: 20px;
 }
 
 .projectDate {
@@ -576,17 +624,30 @@ body::-webkit-scrollbar {
 .projectTitle {
   font-family: Outfit;
   font-weight: 600;
-  font-size: 45px;
+  font-size: clamp(2.1875rem, 1.8566rem + 1.1765vw, 2.8125rem);
 }
 
 .projectInfo {
   font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
-  width: 524px;
-  height: 110px;
+  max-width: 524px;
   line-height: 27.5px;
   margin: 20px 0;
+}
+
+@media (max-width: 1152px) {
+  .projectSubName {
+    margin-right: 0;
+    max-width: 530px;
+  }
+
+  .skillBoxContainer {
+    max-width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 /* contacts */
