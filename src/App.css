@@ -668,6 +668,7 @@ body::-webkit-scrollbar {
 
 .contactButton {
   /* max-width: 435px; */
+  width: 100%;
   color: white;
   border: none;
   background-color: transparent;

@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 import GradientPurple from './GradientPurple';
 
 function Contact(props) {
+    const [email, setEmail] = useState({firstName: '', nameEmail: '', commentInfo: ''})
+
+
     return (
         <div>
             <GradientPurple />
             <GradientPurple />
+            
+
             <div className='contactContainer'>
                 <div className='contactColumns'>
                     <div className='contactInput'>
-                        <form method="POST">
+                        <form method="POST" action="">
                             <div className='contactBorderBottom'>
-                                <input className='contactButton contactName' type="text" name="Name" placeholder='Your Name' />
+                                <input onChange={e => setEmail({...email, firstName: e.target.value})} className='contactButton contactName' type="text" name="Name" placeholder='Your Name' />
                             </div>
                             <div className='contactBorderBottom'>
-                                <input className='contactButton contactEmail' type="text" name="Email" placeholder='Your Email' />
+                                <input onChange={e => setEmail({...email, nameEmail: e.target.value})} className='contactButton contactEmail' type="text" name="Email" placeholder='Your Email' />
                             </div>
                             <div className='contactBorderBottom'>
-                                <input  className='contactButton contactThoughts' type="text" name="Thoughts" placeholder='Share Your Thoughts' />
+                                <input onChange={e => setEmail({...email, commentInfo: e.target.value})} className='contactButton contactThoughts' type="text" name="Thoughts" placeholder='Share Your Thoughts' />
                             </div>
                             <Button name={"Submit"} link={"#"} className={"contactSubmit"}/>
                         </form>

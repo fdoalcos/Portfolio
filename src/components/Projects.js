@@ -10,6 +10,10 @@ function Projects(props) {
     const NetWorkingWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
     const MailServiceWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "SCSS", "Bootstrap"]
     const OnlineAuctionWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
+
+
+    
+
     return (
         <div>
             <GradientPurple />
