@@ -111,6 +111,10 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
+.navMargin {
+  margin: 10px 100px;
+}
+
 .homeUl {
   list-style-type: none;
 }
@@ -135,6 +139,7 @@ body::-webkit-scrollbar {
 
 .homeMainContainer {
   position: relative;
+  /* top: -650px; */
 }
 
 .homeColumns {
