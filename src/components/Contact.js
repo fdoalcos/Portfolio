@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Button from './Button';
 import GradientPurple from './GradientPurple';
 import emailjs from '@emailjs/browser';
+import { useInView } from 'react-intersection-observer';
 
 
 function Contact(props) {
@@ -24,6 +25,12 @@ function Contact(props) {
         document.getElementById("contactForm").reset();
 
       };
+
+
+    const { ref: contactRef, inView: isContactVisible } = useInView();
+
+
+    console.log("Contact is", isContactVisible)
 
     return (
         <div>
@@ -57,7 +64,7 @@ function Contact(props) {
                     </div>
                 </div>
             </div> */}
-            <div className='contactContainer'>
+            <div ref={contactRef} className='contactContainer'>
                 <div className='contactColumns'>
                     <div className='contactInput'>
                         <form id="contactForm" ref={form} onSubmit={sendEmail}>

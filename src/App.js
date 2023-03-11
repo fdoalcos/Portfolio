@@ -1,3 +1,4 @@
+import React, {useState, useEffect, useRef} from 'react';
 import './App.css';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
@@ -7,25 +8,43 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  // const myRef = useRef();
+  // const [isVisible, setVisible] = useState();
+  
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       setVisible(entry.isIntersecting)
+  //     })
+  // })
+
+  // }, [])
+
+  // const elements = myRef.current.querySelectorAll('.Hidden')
+  // elements.forEach(element => {
+  //   observer.observe(element);
+  // })
+
+
   return (
     <div className="MainContainer">
-      <div id="Home">
+      <div className='Hidden' id="Home">
         <Home />
       </div>
-      <div id="AboutMe">
+      <div className='Hidden' id="AboutMe">
         <AboutMe />
       </div>
-      <div id="Skills">
+      <div className='Hidden' id="Skills">
         <Skills />
       </div>
-      <div id="Projects">
+      <div className='Hidden' id="Projects">
         <Projects />
         {/* still need to change this item */}
       </div>
-      <div id="Contact">
+      <div className='Hidden' id="Contact">
         <Contact />
       </div>  
-      <div>
+      <div className='Hidden'>
         <Footer />    
       </div>
     </div>

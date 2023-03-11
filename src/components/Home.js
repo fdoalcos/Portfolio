@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Button from './Button';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
+import { useInView } from 'react-intersection-observer';
+
 
 function Home(props) {
 
@@ -10,9 +12,19 @@ function Home(props) {
         element.classList.toggle('block');
     }
 
+    const { ref: linkRef, inView: isLinkVisible } = useInView();
+    const { ref: homeRef, inView: isHomeVisible } = useInView();
+
+    // isLinkVisible ? linkRef.current.className = "hidden" : linkRef.className = "show";
+    
+    console.log("Linkref's classname is", linkRef)
+
+    console.log("Link is ", isLinkVisible)
+    console.log("Home is", isHomeVisible)
+
     return (
         <div>
-            <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mx-auto" x-data="{open: false}">
+            <nav ref={linkRef} class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mx-auto" x-data="{open: false}">
                 <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="https://flowbite.com/" class="flex items-center">
                     <a className='homeLinkHead' href="#">FRANCIS</a>
@@ -69,7 +81,7 @@ function Home(props) {
 
             <GradientPurple />
             <GradientBlue />
-            <div className='homeMainContainer'>
+            <div ref={homeRef} className='homeMainContainer'>
                 <section>
                     <div className="homeContainer">
                         <div className="homeColumns">

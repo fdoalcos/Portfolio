@@ -2,14 +2,24 @@ import React from 'react';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
 import SkillBox from './SkillBox';
+import { useInView } from 'react-intersection-observer';
+
+
 
 function Skills(props) {
+
+
+    const { ref: skillRef, inView: isSkillVisible } = useInView();
+
+
+    console.log("Skills is", isSkillVisible)
+
     return (
         <div>
             <GradientPurple />
             <GradientBlue />
             <div>
-                <section>
+                <section ref={skillRef}>
                     <div className='skillContainer'>
                         <div>
                             <div className='skillHeader'>

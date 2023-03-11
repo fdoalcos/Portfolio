@@ -5,6 +5,9 @@ import Project from './Project';
 import NetWorkingWebAppSVG from '../images/NetworkingWebApp.svg'
 import MailServiceWebAppSVG from '../images/MailServiceWebApp.svg'
 import OnlineAuctionWebAppSVG from '../images/OnlineAuctionWebApp.svg'
+import { useInView } from 'react-intersection-observer';
+
+
 
 function Projects(props) {
     const NetWorkingWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
@@ -12,18 +15,28 @@ function Projects(props) {
     const OnlineAuctionWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
 
 
+    const { ref: headerRef, inView: isHeaderVisible } = useInView();
+    const { ref: project1Ref, inView: isProject1Visible } = useInView();
+    const { ref: project2Ref, inView: isProject2Visible } = useInView();
+    const { ref: project3Ref, inView: isProject3Visible } = useInView();
+
+
+    console.log("Project Header is ", isHeaderVisible)
+    console.log("Project 1 is ", isProject1Visible)
+    console.log("Project 2 is ", isProject2Visible)
+    console.log("Project 3 is ", isProject3Visible)
     
 
     return (
         <div>
             <GradientPurple />
             <GradientBlue />
-            <div className='projectContainer'>
-                <div>
+            <div className='projectMainContainer'>
+                <div ref={headerRef}>
                     <h2 className='projectName'>Personal Projects</h2>
                     <h1 className='projectSubName'>I enjoy developing and contrubuting my skills to the team</h1>
                 </div>
-                <div className='projectProject'>
+                <div ref={ project1Ref } className='projectProject'>
                     <Project date={"SEP 2022 - DEC 2022"} 
                         title={"Networking Web App"} 
                         skills={NetWorkingWebApp} 
@@ -32,7 +45,7 @@ function Projects(props) {
                         image={NetWorkingWebAppSVG} 
                     />
                 </div>
-                <div className='projectProject'>
+                <div ref={ project2Ref } className='projectProject'>
                     <Project date={"AUG 2022 - SEP 2022"} 
                         title={"Mail-Service Web App"} 
                         skills={MailServiceWebApp} 
@@ -41,7 +54,7 @@ function Projects(props) {
                         image={MailServiceWebAppSVG} 
                     />
                 </div>
-                <div className='projectProject'>
+                <div ref={ project3Ref } className='projectProject'>
                     <Project date={"JULY 2022 - AUG 2022"} 
                         title={"Online Auction Web App"} 
                         skills={OnlineAuctionWebApp} 

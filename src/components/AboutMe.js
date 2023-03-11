@@ -2,15 +2,25 @@ import React from 'react';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
 // import AestheticBrain from './images/AestheticBrain.png'
+import { useInView } from 'react-intersection-observer';
+
+
 
 function AboutMe(props) {
+
+
+    const { ref: aboutRef, inView: isAboutVisible } = useInView();
+
+
+    console.log("About is", isAboutVisible)
+
     return (
         <div>
     
             <GradientPurple />
             <GradientBlue />
             <div>
-                <section>
+                <section ref={aboutRef}>
                     <div className="aboutContainer">
                         <div className="aboutColumns">
                             <div className="aboutImages">
