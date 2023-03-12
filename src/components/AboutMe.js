@@ -20,7 +20,7 @@ function AboutMe(props) {
             <GradientPurple />
             <GradientBlue />
             <div>
-                <section ref={aboutRef}>
+                <section ref={aboutRef} className={isAboutVisible ? 'showElement' : 'hideElement' }>
                     <div className="aboutContainer">
                         <div className="aboutColumns">
                             <div className="aboutImages">

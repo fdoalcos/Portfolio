@@ -13,12 +13,17 @@ body::-webkit-scrollbar {
 
 /* intersection */
 
-.hidden {
+.hiddenElement {
   opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(-100%);
 }
 
-.show {
+.showElement {
   opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
 }
 
 .App-logo {
