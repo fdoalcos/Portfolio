@@ -25,10 +25,6 @@ function AboutMe(props) {
                 entry.target.classList.add("showElement")
                 console.log("I am showing element")
             } 
-            // else {
-            //     entry.target.classList.remove("showElement") 
-            //     console.log("I am not showing element")
-            // }
         })
     })
 

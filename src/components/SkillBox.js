@@ -1,8 +1,30 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 
 
 function SkillBox({skillImage, skillName}) {
+
+    // const skillRef = useRef();
+    // const [isVisible, setVisible] = useState();
+
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
+    //         console.log(entry)
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add("showElement")
+    //             console.log("I am showing element")
+    //         } 
+    //     })
+    // })
+
+    // const elements = skillRef.current.querySelectorAll('.hiddenElement')
+    //     elements.forEach(element => {
+    //         observer.observe(element);
+    //     })
+    // }, [])
+
+    
     const items = ['Python', 'JavaScript', 'Java', 'C', 'SQL', 'HTML', 'CSS', 'Django', 'Flask', 'React']
     const item = [{language: 'Python', src: '/images/Python.png', className:'imagePython'}, 
     {language: 'JavaScript', src:'/images/JavaScript.png', className:'imageJavaScript'}, 
@@ -17,32 +39,19 @@ function SkillBox({skillImage, skillName}) {
     ]
     return (
         <>
-        {/* {
-            items.map(item => (                
-                <div className='SkillBox'>
-                    <div className='skillImage'>
-                        <img src={skillImage} alt="skillImage"/>
+            {
+                item.map(item => (     
+                    <div className='SkillBox hiddenElement'>
+                        <div className='skillImage'>
+                            <img className={item.className} src={item.src}/>
+                        </div>
+                        <div className='skillNames'>
+                            <p>{item.language}</p>
+                        </div>
                     </div>
-                    <div className='skillName'>
-                        <p>{item}</p>
-                    </div>
-                </div>
-            ))
-        }
-         */}
-
-        {
-            item.map(item => (     
-                <div className='SkillBox'>
-                    <div className='skillImage'>
-                        <img className={item.className} src={item.src}/>
-                    </div>
-                    <div className='skillNames'>
-                        <p>{item.language}</p>
-                    </div>
-                </div>
-            ))
-        }
+                ))
+            }
+        
             
             
         </>
