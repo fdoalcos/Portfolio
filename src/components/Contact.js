@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Button from './Button';
 import GradientPurple from './GradientPurple';
 import emailjs from '@emailjs/browser';
@@ -6,6 +6,33 @@ import { useInView } from 'react-intersection-observer';
 
 
 function Contact(props) {
+    const contactRef = useRef();
+    const [isVisible, setVisible] = useState();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add("showElement")
+                console.log(entry.target);
+                console.log("I am showing element")
+            } else {
+                entry.target.classList.remove("hiddenElement")
+            }
+        })
+    })
+
+    console.log("This is project")
+    console.log(contactRef.current)
+
+    // const elements = contactRef.current.querySelectorAll('.hiddenElement')
+    //     elements.forEach(element => {
+    //         observer.observe(element);
+    //     })
+        observer.observe(contactRef.current);
+    }, [])
+    
     const form = useRef();
     const [email, setEmail] = useState({firstName: '', nameEmail: '', commentInfo: ''})
     
@@ -25,12 +52,6 @@ function Contact(props) {
         document.getElementById("contactForm").reset();
 
       };
-
-
-    const { ref: contactRef, inView: isContactVisible } = useInView();
-
-
-    console.log("Contact is", isContactVisible)
 
     return (
         <div>
