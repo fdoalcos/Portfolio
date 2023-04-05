@@ -15,22 +15,15 @@ function Contact(props) {
             console.log(entry)
             if (entry.isIntersecting) {
                 entry.target.classList.add("showElement")
-                console.log(entry.target);
                 console.log("I am showing element")
-            } else {
-                entry.target.classList.remove("hiddenElement")
-            }
+            } 
         })
     })
 
-    console.log("This is project")
-    console.log(contactRef.current)
-
-    // const elements = contactRef.current.querySelectorAll('.hiddenElement')
-    //     elements.forEach(element => {
-    //         observer.observe(element);
-    //     })
-        observer.observe(contactRef.current);
+    const elements = contactRef.current.querySelectorAll('.hiddenElement')
+        elements.forEach(element => {
+            observer.observe(element);
+        })
     }, [])
     
     const form = useRef();
@@ -85,9 +78,9 @@ function Contact(props) {
                     </div>
                 </div>
             </div> */}
-            <div ref={contactRef} className='contactContainer'>
-                <div className='contactColumns'>
-                    <div className='contactInput'>
+            <div ref={contactRef} className='contactContainer '>
+                <div className=' hiddenElement contactColumns'>
+                    <div className='hiddenElement contactInput'>
                         <form id="contactForm" ref={form} onSubmit={sendEmail}>
                             <div className='contactBorderBottom'>
                                 <input type="text" name="user_name" className='contactButton contactName' placeholder='Your Name' />

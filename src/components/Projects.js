@@ -10,9 +10,37 @@ import { useInView } from 'react-intersection-observer';
 
 
 function Projects(props) {
+
+    
+
     const NetWorkingWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
     const MailServiceWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "SCSS", "Bootstrap"]
     const OnlineAuctionWebApp = ["Python", "JavaScript", "Django", "HTML", "CSS", "Bootstrap"]
+
+
+    const projectRef = useRef();
+    const [isVisible, setVisible] = useState();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add("showElement")
+                console.log("I am showing element")
+            } 
+            // else {
+            //     entry.target.classList.remove("showElement") 
+            //     console.log("I am not showing element")
+            // }
+        })
+    })
+
+    const elements = projectRef.current.querySelectorAll('.hiddenElement')
+        elements.forEach(element => {
+            observer.observe(element);
+        })
+    }, [])
 
 
     // const { ref: headerRef, inView: isHeaderVisible } = useInView();
@@ -57,12 +85,12 @@ function Projects(props) {
         <div>
             <GradientPurple />
             <GradientBlue />
-            <div  className='projectMainContainer'>
-                <div className=''>
+            <div ref={projectRef} className='projectMainContainer'>
+                <div className='hiddenElement'>
                     <h2 className='projectName '>Personal Projects</h2>
                     <h1 className='projectSubName '>I enjoy developing and contrubuting my skills to the team</h1>
                 </div>
-                <div  className='projectProject '>
+                <div  className='hiddenElement projectProject '>
                     <Project date={"SEP 2022 - DEC 2022"} 
                         title={"Networking Web App"} 
                         skills={NetWorkingWebApp} 
