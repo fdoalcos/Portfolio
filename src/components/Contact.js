@@ -78,7 +78,7 @@ function Contact(props) {
                     </div>
                 </div>
             </div> */}
-            <div ref={contactRef} className='contactContainer '>
+            <div ref={contactRef} className='contactContainer ' id="contacts">
                 <div className=' hiddenElement contactColumns'>
                     <div className='hiddenElement contactInput'>
                         <form id="contactForm" ref={form} onSubmit={sendEmail}>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Button from './Button';
+import {Link} from 'react-scroll';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
 import { useInView } from 'react-intersection-observer';
@@ -11,16 +12,6 @@ function Home(props) {
         var element = document.getElementById('navbar-cta');
         element.classList.toggle('block');
     }
-
-    // const { ref: linkRef, inView: isLinkVisible } = useInView();
-    // const { ref: homeRef, inView: isHomeVisible } = useInView();
-
-    
-    // console.log("Linkref's classname is", linkRef)
-
-    // console.log("Link is ", isLinkVisible)
-    // console.log("Home is", isHomeVisible)
-
 
     const homeRef = useRef();
     const [isVisible, setVisible] = useState();
@@ -49,14 +40,15 @@ function Home(props) {
 
     return (
         
-        <div>
+        <div id="home">
             <GradientPurple />
             <GradientBlue />
             <div ref={homeRef}>
                     <nav className="hiddenElement border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mx-auto" x-data="{open: false}">
                         <div class="container flex flex-wrap items-center justify-between mx-auto">
                         <a href="https://flowbite.com/" class="flex items-center">
-                            <a className='homeLinkHead' href="#">FRANCIS</a>
+                            {/* <a className='homeLinkHead' href="#">FRANCIS</a> */}
+                            <Link to="home" spy={true} smooth={true} offset={-50} duration={500} className='homeLinkHead'>FRANCIS</Link>
                         </a>
                         <div class="hiddenElement flex md:order-2">
                             <Button name={"Resume"}  link={"resume"}/>
@@ -69,19 +61,19 @@ function Home(props) {
                         <div class="hiddenElement items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                             <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent">
                             <li>
-                                <a className='homeLink' href="#">Home</a>
+                                <Link to="home" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Home</Link>
                             </li>
                             <li>
-                                <a className='homeLink' href="#">About Me</a>
+                                <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className='homeLink'>About Me</Link>
                             </li>
                             <li>
-                                <a className='homeLink' href="#">Skills</a>
+                                <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Skills</Link>
                             </li>
                             <li>
-                                <a className='homeLink' href="#">Projects</a>
+                                <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Projects</Link>
                             </li>
                             <li>
-                                <a className='homeLink' href="#">Contacts</a>
+                                <Link to="contacts" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Contacts</Link>
                             </li>
                             </ul>
                         </div>

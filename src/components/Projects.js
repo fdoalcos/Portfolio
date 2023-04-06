@@ -85,7 +85,7 @@ function Projects(props) {
         <div>
             <GradientPurple />
             <GradientBlue />
-            <div ref={projectRef} className='projectMainContainer'>
+            <div ref={projectRef} className='projectMainContainer' id="projects">
                 <div className='hiddenElement'>
                     <h2 className='projectName '>Personal Projects</h2>
                     <h1 className='projectSubName '>I enjoy developing and contrubuting my skills to the team</h1>

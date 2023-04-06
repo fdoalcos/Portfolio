@@ -21,7 +21,7 @@ function AboutMe(props) {
         const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             console.log(entry)
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && window.scrollY != 0) {
                 entry.target.classList.add("showElement")
                 console.log("I am showing element")
             } 
@@ -39,7 +39,7 @@ function AboutMe(props) {
 
     
     return (
-        <div>
+        <div id="about">
     
             <GradientPurple />
             <GradientBlue />
