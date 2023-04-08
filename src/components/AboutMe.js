@@ -48,7 +48,7 @@ function AboutMe(props) {
                     <div className="hiddenElement aboutContainer">
                         <div className="hiddenElement aboutColumns">
                             <div className="hiddenElement aboutImages">
-                                <img className="hiddenElement aboutImage" src='/images/AestheticBrain.png'/>
+                                <img className="hiddenElement aboutImage" src='images/AestheticBrain.png'/>
                             </div>
                             <div className="hiddenElement aboutMainName">
                                 <h1 className="hiddenElement aboutName">About Me</h1>
