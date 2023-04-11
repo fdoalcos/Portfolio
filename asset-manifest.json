@@ -1,18 +1,27 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.93390b2d.css",
-    "main.js": "/Portfolio/static/js/main.dcd011e8.js",
+    "main.js": "/Portfolio/static/js/main.97bc6f4b.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/OnlineAuctionWebApp.svg": "/Portfolio/static/media/OnlineAuctionWebApp.9601a247ac7db7d3c03789ae029f9ab7.svg",
     "static/media/NetworkingWebApp.svg": "/Portfolio/static/media/NetworkingWebApp.7a27a04cf560c9ac949f06940942a0bc.svg",
     "static/media/MailServiceWebApp.svg": "/Portfolio/static/media/MailServiceWebApp.dd0f6cf4db3b2d7cadae9a6eb9f2c5a6.svg",
+    "static/media/React.png": "/Portfolio/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Flask.png": "/Portfolio/static/media/Flask.d66633da93fa236ed628.png",
+    "static/media/JavaScript.png": "/Portfolio/static/media/JavaScript.31c81075366a39d39b47.png",
+    "static/media/CSS.png": "/Portfolio/static/media/CSS.71e1a6c5284a6bda3345.png",
+    "static/media/AestheticBrain.png": "/Portfolio/static/media/AestheticBrain.1e47b109e6875e0bb18b.png",
+    "static/media/Django.png": "/Portfolio/static/media/Django.a5aaa412df3c52f5f6bf.png",
+    "static/media/SQL.png": "/Portfolio/static/media/SQL.64b3eb63f995c0da35b3.png",
+    "static/media/C.png": "/Portfolio/static/media/C.bbbbbabc8c191bfb99bf.png",
+    "static/media/Java.png": "/Portfolio/static/media/Java.6c64373d3b7415758078.png",
     "index.html": "/Portfolio/index.html",
     "main.93390b2d.css.map": "/Portfolio/static/css/main.93390b2d.css.map",
-    "main.dcd011e8.js.map": "/Portfolio/static/js/main.dcd011e8.js.map",
+    "main.97bc6f4b.js.map": "/Portfolio/static/js/main.97bc6f4b.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93390b2d.css",
-    "static/js/main.dcd011e8.js"
+    "static/js/main.97bc6f4b.js"
   ]
 }
