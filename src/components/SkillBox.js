@@ -39,18 +39,99 @@ function SkillBox({skillImage, skillName}) {
     ]
     return (
         <>
-            {
+            {/* {
                 item.map(item => (     
                     <div className='SkillBox hiddenElement'>
                         <div className='skillImage'>
-                            <img className={item.className} src={item.src}/>
+                            <img className={item.className} src={require('../images/C.png')}/>
                         </div>
                         <div className='skillNames'>
                             <p>{item.language}</p>
                         </div>
                     </div>
                 ))
-            }
+            } */}
+
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imagePython' src={require('../images/Python.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>Python</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageJavaScript' src={require('../images/JavaScript.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageJava' src={require('../images/Java.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>Java</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageC' src={require('../images/C.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>C</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageSQL' src={require('../images/SQL.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageHTML' src={require('../images/HTML.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageCSS' src={require('../images/CSS.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageDjango' src={require('../images/Django.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>Django</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageFlask' src={require('../images/Flask.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>Flask.</p>
+                </div>
+            </div>
+            <div className='SkillBox hiddenElement'>
+                <div className='skillImage'>
+                    <img className='imageReact' src={require('../images/React.png')}/>
+                </div>
+                <div className='skillNames'>
+                    <p>React</p>
+                </div>
+            </div>
         
             
             
