@@ -1,28 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 
 function Footer(props) {
 
-    const { ref: footerRef, inView: isFooterRef } = useInView();
+    const footerRef = useRef();
+    const [isVisible, setVisible] = useState();
 
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            console.log(entry)
+            if (entry.isIntersecting && window.scrollY != 0) {
+                entry.target.classList.add("showElement")
+                console.log("I am showing element")
+            } 
+        })
+    })
 
-    console.log("Footer is", isFooterRef)
+    const elements = footerRef.current.querySelectorAll('.hiddenElement')
+        elements.forEach(element => {
+            observer.observe(element);
+        })
+    }, [])
+
 
     return (
         <div ref={footerRef}>
-            <div className='footerContainer'>
+            <div className='footerContainer hiddenElement'>
                 <div className='footerLogos'>
-                    <a href="https://github.com/fdoalcos"><i class=" iTag bi bi-github footerGithub"></i></a>
-                    <a href="https://www.linkedin.com/in/fdoalcos/"><i class=" iTag bi bi-linkedin footerLinkedin"></i></a>
-                    <a href="https://www.facebook.com/francis.alcos.1/"><i class=" iTag bi bi-twitter footerTwitter"></i></a>
-                    <a href="#"></a><i class=" iTag bi bi-instagram footerInstagram"></i>
-                    <a href="https://twitter.com/fddddnic"><i class=" iTag bi bi-facebook footerFacebook"></i></a>
-                    <a href="mailto:alcosfrancis@gmail.com"><i class=" iTag bi bi-envelope footerEnvelope"></i></a>
-                    
+                    <a href="https://github.com/fdoalcos"><i class=" iTag bi bi-github footerGithub hiddenElement"></i></a>
+                    <a href="https://www.linkedin.com/in/fdoalcos/"><i class=" iTag bi bi-linkedin footerLinkedin hiddenElement"></i></a>
+                    <a href="https://twitter.com/fddddnic"><i class=" iTag bi bi-twitter footerTwitter hiddenElement"></i></a>
+                    <a href="https://www.instagram.com/alcosfrancis/?next=%2Falecofrancis%2F&hl=en"><i class=" iTag bi bi-instagram footerInstagram hiddenElement"></i></a>
+                    <a href="https://www.facebook.com/francis.alcos.1/"><i class=" iTag bi bi-facebook footerFacebook"></i></a>
+                    <a href="mailto:alcosfrancis@gmail.com"><i class=" iTag bi bi-envelope footerEnvelope hiddenElement"></i></a>
                 </div>
-                <p className='footerDesign'>Designed and built by Francis</p>
-                <p className='footerReserve'>All right reserved - Francis Alcos</p>
+                <p className='footerDesign hiddenElement'>Designed and built by Francis</p>
+                <p className='footerReserve hiddenElement'>All right reserved - Francis Alcos</p>
 
             </div>
         </div>

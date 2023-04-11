@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
 import Project from './Project';
-import NetWorkingWebAppSVG from '../images/NetworkingWebApp.svg'
-import MailServiceWebAppSVG from '../images/MailServiceWebApp.svg'
-import OnlineAuctionWebAppSVG from '../images/OnlineAuctionWebApp.svg'
+import NetWorkingWebAppSVG from '../imagesc/NetworkingWebApp.svg';
+import MailServiceWebAppSVG from '../imagesc/MailServiceWebApp.svg';
+import OnlineAuctionWebAppSVG from '../imagesc/OnlineAuctionWebApp.svg';
 import { useInView } from 'react-intersection-observer';
 
 
@@ -95,7 +95,7 @@ function Projects(props) {
                         title={"Networking Web App"} 
                         skills={NetWorkingWebApp} 
                         description={"Developed a networking website that acts like Twitter and lets users Post, Follow, Comment, and Like users. This website is perfect for interacting with other users as its main functionality is interacting with people like any other Social Media App."} 
-                        link={"#"} 
+                        link={"https://www.youtube.com/watch?v=dDWxV2W6x48&t=191s"} 
                         image={NetWorkingWebAppSVG} 
                         />
                 </div>
@@ -104,7 +104,7 @@ function Projects(props) {
                         title={"Mail-Service Web App"} 
                         skills={MailServiceWebApp} 
                         description={"Developed a mailing website that acts like Gmail and lets users Send, Receive, and Reply to users. This website is good for messaging other users and its Backend was improvised to make the interaction between users much faster."} 
-                        link={"#"} 
+                        link={"https://www.youtube.com/watch?v=pIvKkZrsGtA&t=142s"} 
                         image={MailServiceWebAppSVG} 
                     />
                 </div>
@@ -113,7 +113,7 @@ function Projects(props) {
                         title={"Online Auction Web App"} 
                         skills={OnlineAuctionWebApp} 
                         description={"Developed an Online Auction website that acts like Ebay and  lets users Create, Review, Bid, Buy and Sell a product online. This website is good for buying or selling an Item online as its implementation has all your needs just like an Online Store."} 
-                        link={"#"} 
+                        link={"https://www.youtube.com/watch?v=V6lJmntPim4&t=1s"} 
                         image={OnlineAuctionWebAppSVG} 
                     />
                 </div>
