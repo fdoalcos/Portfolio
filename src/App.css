@@ -673,6 +673,12 @@ body::-webkit-scrollbar {
   }
 }
 
+.SkillBox:hover {
+  box-shadow: rgba(119, 33, 214, 0.24) 0px 30px 60px -12px, rgba(119, 33, 214, 0.24) 0px 18px 36px -18px;
+  transform: translateY(-7px);
+  transition: 0.5s;
+}
+
 
 
 /* contacts */
