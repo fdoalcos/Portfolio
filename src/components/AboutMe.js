@@ -42,7 +42,7 @@ function AboutMe(props) {
         <div id="about">
     
             <GradientPurple />
-            <GradientBlue />
+            <GradientBlue classPosition={"aboutPosition"}/>
             <div>
                 <section ref={aboutRef}>
                     <div className="hiddenElement aboutContainer">
@@ -53,9 +53,9 @@ function AboutMe(props) {
                             <div className="hiddenElement aboutMainName">
                                 <h1 className="hiddenElement aboutName">About Me</h1>
                                 <h1 className="hiddenElement aboutSubName">I enjoy developing and contributing my skills to the team</h1>
-                                <p className='hiddenElement aboutInfo'>I am a Full-Stack Web Developer with passion to grow and contribute my skills to the team. I am currently a first-year student studying Computer Science at University of Massachusetts  Boston and very passionate about development.</p>
-                                <p className='hiddenElement aboutInfo'>I am a Full-Stack Web Developer with passion to grow and contribute my skills to the team. I am currently a first-year student studying Computer Science at University of Massachusetts  Boston and very passionate about development.</p>
-                                <p className='hiddenElement aboutInfo'>I am a Full-Stack Web Developer with passion to grow and contribute my skills to the team. I am currently a first-year student studying Computer Science at University of Massachusetts  Boston and very passionate about development.</p>
+                                <p className='hiddenElement aboutInfo'>I am a Full-Stack Web Developer with a passion for growing and contributing my skills to the team. I am currently a first-year student studying Computer Science at the University of Massachusetts Boston and am very passionate about development.</p>
+                                <p className='hiddenElement aboutInfo'>I grew up in the Philippines and immigrated to the United States in 2021, since then, I explored new opportunities and learned new skills, including coding. Since beginning my journey as a coder, I have developed a love for the craft and am dedicated to growing as a developer.</p>
+                                <p className='hiddenElement aboutInfo'>To achieve my goals, I focus on continually learning and building new projects. This approach has helped me advance my coding journey and has enabled me to code most of the time. I am eager to embrace new challenges and opportunities to develop my skills further as a developer.</p>
                             </div>
                         </div>
                     </div>

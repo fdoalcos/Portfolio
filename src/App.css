@@ -74,6 +74,15 @@ body::-webkit-scrollbar {
 
 }
 
+.homeBluePosition {
+  left: 15%;
+  top: 15%;
+}
+
+.homePurplePosition {
+  left: 50%;
+}
+
 #Home {
   /*  */
 }
@@ -307,7 +316,7 @@ body::-webkit-scrollbar {
   font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
-  max-width: 524px;
+  max-width: 635px;
   line-height: 27.5px;
   margin: 0 0 20px;
 }

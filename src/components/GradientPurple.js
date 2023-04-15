@@ -1,8 +1,8 @@
 import React from 'react';
 
-function GradientPurple(props) {
+function GradientPurple(classPosition) {
     return (
-        <div className="gradientPurple absolute">
+        <div className={`${classPosition.classPosition} gradientPurple absolute`}>
             
         </div>
     );

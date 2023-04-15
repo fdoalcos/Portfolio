@@ -34,7 +34,7 @@ function Skills(props) {
     return (
         <div>
             <GradientPurple />
-            <GradientBlue />
+            <GradientBlue classPosition={"skillPosition"} />
             <div id="skills">
                 <section ref={skillRef}>
                     <div className='skillContainer hiddenElement'>

@@ -84,7 +84,7 @@ function Projects(props) {
     return (
         <div>
             <GradientPurple />
-            <GradientBlue />
+            <GradientBlue classPosition={"projectPosition"} />
             <div ref={projectRef} className='projectMainContainer' id="projects">
                 <div className='hiddenElement'>
                     <h2 className='projectName '>Personal Projects</h2>

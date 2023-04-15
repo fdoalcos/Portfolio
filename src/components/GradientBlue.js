@@ -1,8 +1,8 @@
 import React from 'react';
 
-function GradientBlue(props) {
+function GradientBlue(classPosition) {
     return (
-        <div className="gradientBlue absolute">
+        <div className={`${classPosition.classPosition} gradientBlue absolute`}>
             
         </div>
     );
