@@ -45,12 +45,12 @@ function AboutMe(props) {
             <GradientBlue classPosition={"aboutPosition"}/>
             <div>
                 <section ref={aboutRef}>
-                    <div className="hiddenElement aboutContainer">
-                        <div className="hiddenElement aboutColumns">
+                    <div className="aboutContainer">
+                        <div className="aboutColumns">
                             <div className="hiddenElement aboutImages">
                                 <img className="hiddenElement aboutImage" src={require('../images/AestheticBrain.png')} alt='brain'/>
                             </div>
-                            <div className="hiddenElement aboutMainName">
+                            <div className="aboutMainName">
                                 <h1 className="hiddenElement aboutName">About Me</h1>
                                 <h1 className="hiddenElement aboutSubName">I enjoy developing and contributing my skills to the team</h1>
                                 <p className='hiddenElement aboutInfo'>I am a Full-Stack Web Developer with a passion for growing and contributing my skills to the team. I am currently a first-year student studying Computer Science at the University of Massachusetts Boston and am very passionate about development.</p>

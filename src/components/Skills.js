@@ -37,14 +37,14 @@ function Skills(props) {
             <GradientBlue classPosition={"skillPosition"} />
             <div id="skills">
                 <section ref={skillRef}>
-                    <div className='skillContainer hiddenElement'>
+                    <div className='skillContainer'>
                         <div>
-                            <div className='skillHeader hiddenElement'>
-                                <h1 className='skillName hiddenElement'>SKILLS</h1>
-                                <h1 className='skillInfo hiddenElement'>What I can bring to the team and the skillset I have</h1>
+                            <div className='hiddenElement skillHeader'>
+                                <h1 className='skillName'>SKILLS</h1>
+                                <h1 className='skillInfo'>What I can bring to the team and the skillset I have</h1>
                             </div>
                         </div>
-                        <div className='skillBox hiddenElement'>
+                        <div className='skillBox'>
                             <SkillBox />
                         </div>
 
