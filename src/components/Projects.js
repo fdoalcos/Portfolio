@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import GradientBlue from './GradientBlue';
 import GradientPurple from './GradientPurple';
 import Project from './Project';
-import NetWorkingWebAppSVG from '../imagesc/NetworkingWebApp.svg';
-import MailServiceWebAppSVG from '../imagesc/MailServiceWebApp.svg';
-import OnlineAuctionWebAppSVG from '../imagesc/OnlineAuctionWebApp.svg';
+import NetWorkingWebAppSVG from '../images/image2.svg';
+import MailServiceWebAppSVG from '../images/image3.svg';
+import OnlineAuctionWebAppSVG from '../images/image1.svg';
+import dot from '../images/dot.svg'
+
 import { useInView } from 'react-intersection-observer';
 
 
@@ -97,6 +99,7 @@ function Projects(props) {
                         description={"Developed a networking website that acts like Twitter and lets users Post, Follow, Comment, and Like users. This website is perfect for interacting with other users as its main functionality is interacting with people like any other Social Media App."} 
                         link={"https://www.youtube.com/watch?v=dDWxV2W6x48&t=191s"} 
                         image={NetWorkingWebAppSVG} 
+
                         />
                 </div>
                 <div className='projectProject '>

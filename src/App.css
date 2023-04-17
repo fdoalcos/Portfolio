@@ -675,6 +675,35 @@ body::-webkit-scrollbar {
   margin: 20px 0;
 }
 
+.projImage {
+  /* position: relative; */
+}
+
+.projectImage {
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.dotImage {
+  position: absolute;
+  top: 61%;
+  left: 0.80rem;
+  z-index: -1;
+}
+
+
+
+.projectImage .projImage {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  margin-left: 30px;
+}
+
+.projectImage:hover .projImage{
+  transform: scale(1.5);
+}
+
 @media (max-width: 1152px) {
   .projectSubName {
     margin-right: 0;

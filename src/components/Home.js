@@ -44,7 +44,7 @@ function Home(props) {
             <GradientPurple classPosition={"homePurplePosition"}/>
             <GradientBlue classPosition={"homeBluePosition"}/>
             <div id="home" className='relative' ref={homeRef}>
-                    <nav className="stickyElement hiddenElement border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mx-auto" x-data="{open: false}">
+                    <nav className="hiddenElement stickyElement hiddenElement border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mx-auto" x-data="{open: false}">
                         <div class="container flex flex-wrap items-center justify-between mx-auto">
                         <a href="https://flowbite.com/" class="flex items-center">
                             {/* <a className='homeLinkHead' href="#">FRANCIS</a> */}
@@ -59,7 +59,7 @@ function Home(props) {
                             </button>
                         </div>
                         <div class="hiddenElement items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent">
+                            <ul class="hiddenElement flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent">
                             <li>
                                 <Link to="home" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Home</Link>
                             </li>

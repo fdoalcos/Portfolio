@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Button from './Button';
+import dot from '../images/dot.svg'
+
 
 function Project({date, title, skills, description, link, image}) {
     // const projectsRef = useRef();
@@ -55,7 +57,10 @@ function Project({date, title, skills, description, link, image}) {
                         </div>
                     </div>
                     <div className='projectImage'>
-                        <img src={image} alt="projectImage" />
+                        <img src={image} className='projImage' alt="projectImage" />
+                        <div className='dotImage'>
+                            <img src={dot} alt="projectImage" />
+                        </div>
                     </div>
                 </div>
                 
