@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 
 function App() {
 
@@ -34,8 +35,11 @@ function App() {
 
   return (
     <div className="">
-      <div ref={navBarRef} className='mainNavBar' id="Navbar">
+      <div ref={navBarRef} className='mainNavBar hidden blockNavBar' id="Navbar">
         <Navbar />
+      </div>
+      <div className='hidden blockNavBar2'>
+        <Navbar2 />
       </div>
       <div className='MainContainer'>
         <div className='Hidden' id="Home">

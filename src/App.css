@@ -202,6 +202,15 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
+.homeLinks {
+  font-family: Outfit;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .homeMainContainer {
   position: relative;
   /* top: -650px; */
@@ -628,6 +637,19 @@ body::-webkit-scrollbar {
     height: 86px
   }
 }
+
+@media (min-width: 1025px) {
+  .blockNavBar {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blockNavBar2 {
+    display: block;
+  }
+}
+
 
 /* Projects */
 
