@@ -52,19 +52,19 @@ function Navbar(props) {
                     <div class="hiddenElement items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                         <ul class="hiddenElement flex flex-col p-4 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent">
                         <li>
-                            <Link to="home" spy={true} smooth={true} offset={-100} duration={175} className='homeLink'>Home</Link>
+                            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className='homeLink'>Home</Link>
                         </li>
                         <li>
-                            <Link to="about" spy={true} smooth={true} offset={-70} duration={175} className='homeLink'>About Me</Link>
+                            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className='homeLink'>About Me</Link>
                         </li>
                         <li>
-                            <Link to="skills" spy={true} smooth={true} offset={-50} duration={175} className='homeLink'>Skills</Link>
+                            <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Skills</Link>
                         </li>
                         <li>
-                            <Link to="projects" spy={true} smooth={true} offset={-50} duration={175} className='homeLink'>Projects</Link>
+                            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Projects</Link>
                         </li>
                         <li>
-                            <Link to="contacts" spy={true} smooth={true} offset={-50} duration={175} className='homeLink'>Contacts</Link>
+                            <Link to="contacts" spy={true} smooth={true} offset={-50} duration={500} className='homeLink'>Contacts</Link>
                         </li>
                         </ul>
                     </div>

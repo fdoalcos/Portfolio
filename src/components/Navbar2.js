@@ -24,27 +24,27 @@ function Navbar2(props) {
                 <ul class="space-y-2 font-medium">
                     <li>
                         <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <Link to="home" spy={true} smooth={true} offset={-100} duration={175} className='homeLinks text-black'>Home</Link>
+                            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className='homeLinks text-black'>Home</Link>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <Link to="about" spy={true} smooth={true} offset={-70} duration={175} className='homeLinks'>About Me</Link>
+                            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className='homeLinks'>About Me</Link>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <Link to="skills" spy={true} smooth={true} offset={-50} duration={175} className='homeLinks'>Skills</Link>
+                            <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} className='homeLinks'>Skills</Link>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <Link to="projects" spy={true} smooth={true} offset={-50} duration={175} className='homeLinks'>Projects</Link>
+                            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className='homeLinks'>Projects</Link>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <Link to="contacts" spy={true} smooth={true} offset={-50} duration={175} className='homeLinks'>Contacts</Link>
+                            <Link to="contacts" spy={true} smooth={true} offset={-50} duration={500} className='homeLinks'>Contacts</Link>
                         </a>
                     </li>
                 </ul>
